@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeesPageComponent } from './employees-page/employees-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
+import { EmployeeDetailPageComponent } from './employee-detail-page/employee-detail-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesPageComponent,
-    InfoPageComponent
+    InfoPageComponent,
+    EmployeeDetailPageComponent
   ],
   imports: [
     BrowserModule,
