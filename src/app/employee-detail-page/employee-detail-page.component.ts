@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { employees } from '../datamodel';
 
 @Component({
   selector: 'app-employee-detail-page',
@@ -8,13 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EmployeeDetailPageComponent implements OnInit {
 
-  employee = {};
+  employee:any = {};
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.employee = { firstName: "test" };
+    this.employee = employees.find(m => String(m.employeeID) === id);
   }
 
 }
