@@ -1,1 +1,5 @@
-<p>employees-page works!</p>
+<h2>There are {{employees.length}} employees:</h2>
+
+<div *ngFor="let employee of employees">
+	{{employee.firstName}} {{employee.lastName}}
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { employees } from '../datamodel';
 
 @Component({
   selector: 'app-employees-page',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employees-page.component.scss']
 })
 export class EmployeesPageComponent implements OnInit {
+
+  employees = employees;
 
   constructor() { }
 
